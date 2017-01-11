@@ -1,0 +1,25 @@
+{
+  "name": "usymbol",
+  "version": "1.0.0",
+  "description": "small  lib for creation uniq symbols with different ways",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliaksandr-master/usymbol.git"
+  },
+  "keywords": [
+    "uniq",
+    "number",
+    "string",
+    "filename"
+  ],
+  "author": "alxe.master@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aliaksandr-master/usymbol/issues"
+  },
+  "homepage": "https://github.com/aliaksandr-master/usymbol#readme"
+}
