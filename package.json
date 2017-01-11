@@ -4,7 +4,10 @@
   "description": "small  lib for creation uniq symbols with different ways",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepush": "npm test",
+    "commitmsg": "npm test",
+    "precommit": "npm test",
+    "test": "node_modules/.bin/jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,40 @@
   "bugs": {
     "url": "https://github.com/aliaksandr-master/usymbol/issues"
   },
-  "homepage": "https://github.com/aliaksandr-master/usymbol#readme"
+  "homepage": "https://github.com/aliaksandr-master/usymbol#readme",
+  "devDependencies": {
+    "husky": "0.12.0",
+    "jest": "18.1.0",
+    "jest-cli": "18.1.0"
+  },
+  "jest": {
+    "automock": false,
+    "notify": true,
+    "testPathDirs": [
+      "<rootDir>/lib"
+    ],
+    "testEnvironment": "jsdom",
+    "cacheDirectory": ".tmp/jest-cache",
+    "coverageDirectory": ".tmp/test-coverage-report",
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/"
+    ],
+    "globals": {
+      "process.env.NODE_ENV": "testing"
+    },
+    "moduleFileExtensions": [
+      "",
+      "js",
+      "jsx"
+    ],
+    "testRegex": "/__tests__/.+?\\.test\\.js$",
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "verbose": false
+  }
 }
