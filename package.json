@@ -1,6 +1,6 @@
 {
   "name": "usymbol",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "small  lib for creation uniq symbols with different ways",
   "main": "lib/index.js",
   "scripts": {
